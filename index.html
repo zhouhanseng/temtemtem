@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- For Google -->
+  <meta name="description" content="The Portal to the New, Open Internet." />
+  <meta name="keywords" content="Privacy, Blockchain, DWeb, Maskbook, Mask Network" />
+  <meta name="author" content="Mask Network" />
+  <meta name="application-name" content="Mask Network" />
+
+  <!-- For Facebook -->
+  <meta property="og:title" content="Mask Network — The Portal to the New, Open Internet." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://maskbook.com/img/fb-share-banner.png" />
+  <meta property="og:url" content="https://mask.io" />
+  <meta property="og:description" content="The Portal to the New, Open Internet." />
+  <meta property="fb:app_id" content="321539018508290" />
+
+  <!-- For Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mask Network — The Portal to the New, Open Internet." />
+  <meta name="twitter:description" content="The Portal to the New, Open Internet." />
+  <meta name="twitter:image" content="https://maskbook.com/apple-touch-icon.png" />
+
+  <!-- For Apple -->
+  <meta name="apple-itunes-app" content="app-id=1478382964" />
+  <title>Mask Network (Maskbook)</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/site.css" />
+  <script src="/scripts/jquery-3.4.1.min.js"></script>
+  <script src="/scripts/main.js"></script>
+
+  <script>
+    window.onload = () => {
+      let navOpen = false;
+      const navToggle = document.getElementById('navToggle');
+      const navDrawer = document.getElementById('navDrawer');
+      const navBg = document.getElementById('navBg');
+      function toggle() {
+        navOpen = !navOpen;
+        if (navOpen) {
+          navToggle.classList.add('open');
+          navDrawer.classList.add('show');
+        } else {
+          navToggle.classList.remove('open');
+          navDrawer.classList.remove('show');
+        }
+      }
+      navToggle.addEventListener('click', toggle);
+      navBg.addEventListener('click', toggle);
+    }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-WWRTN8P");
+  </script>
+</head>
+
+<body>
+  <section class="navbar wide">
+    <section class="body">
+      <a class="navbar-brand">
+        <img src="/assets/icons/logo.svg" width="200px" />
+      </a>
+      <nav class="navbar-nav">
+        <a target="_blank" href="https://github.com/DimensionDev/Maskbook">Source Code</a>
+        <a target="_blank" href="https://news.maskbook.com">News</a>
+        <a class="install" href="/install">Install</a>
+      </nav>
+    </section>
+  </section>
+  <section class="navbar narrow">
+    <section class="body">
+      <a class="logo">
+        <img src="/assets/icons/logo.svg" width="140px" />
+      </a>
+      <button class="toggler" id="navToggle"></button>
+    </section>
+  </section>
+  <section class="navDrawer" id="navDrawer">
+    <div class="bg" id="navBg"></div>
+    <div class="body">
+      <nav class="nav">
+        <a target="_blank" href="https://github.com/DimensionDev/Maskbook">Source Code</a>
+        <a target="_blank" href="https://news.maskbook.com">News</a>
+        <a class="install" href="/install">Install</a>
+      </nav>
+      <div class="social">
+        <a href="https://www.facebook.com/groups/324857694838456" title="Facebook"></a>
+        <a href="https://twitter.com/realmaskbook" title="Twitter"></a>
+        <a href="https://github.com/DimensionDev" title="GitHub"></a>
+        <a href="https://t.me/maskbook_group#telegram" title="Telegram"></a>
+        <a href="https://discord.gg/4SVXvj7" title="Discord"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="install site-section collapsed">
+    <h1 class="headline">The Portal to the New & Open Internet</h1>
+    <p class="subline">
+      Encrypt your posts &amp; chats on social networks <br />
+      Allow only your friends to decrypt.
+    </p>
+    <section class="open-store">
+      <a class="link-button" href="/install">
+        Get Mask
+      </a>
+      <span class="link-description">
+        For <span title="Google Chrome">Chrome</span>, <span title="Microsoft Edge">Edge</span>, <span
+          title="Mozilla Firefox">Firefox</span>,<br />
+        and Chromium-based browsers.
+      </span>
+    </section>
+  </section>
+
+  <div class="_line"></div>
+
+  <section class="core-feature site-section">
+    <section class="site-section-header">
+      <h2 class="site-section-title">
+        <div>Encrypted</div>
+        <div>+</div>
+        <div>Decrypted</div>
+        <div>Automatically</div>
+      </h2>
+      <p class="site-section-description">
+        <b>Mask Network</b> allows you to encrypt content when posting on <i>You-Know-Where.</i><br />
+        Only you and your friends can decrypt them.<br />
+        <br />
+        Not even developers of Mask Network.
+      </p>
+    </section>
+    <img src="/assets/icons/Group 457.svg" class="illust"/>
+    <div class="_line"></div>
+    <section class="site-section-body">
+      <div class="steps">
+        <article class="step">
+          <h3 class="title">Install</h3>
+          <img src="/assets/icons/Group 418.svg"/>
+          <p class="tip">Install Mask Network extension on your favourite browsers to get started!<br /><br />We support Chrome, Firefox, iOS and Android.</p>
+        </article>
+        <article class="step">
+          <h3 class="title">Verify</h3>
+          <img src="/assets/icons/Group 419.svg"/>
+          <p class="tip">You will be guided through a few steps to verify your identity after Mask Network extension is installed. EZ.<br /><br />Piece of cake, anyone?</p>
+        </article>
+        <article class="step">
+          <h3 class="title">Enjoy</h3>
+          <img src="/assets/icons/Group 420.svg"/>
+          <p class="tip">Whoa that was fast!<br />Now is the time we enjoy and embrace a more secure & private Internet through the social network of your choice.</p>
+        </article>
+      </div>
+    </section>
+  </section>
+
+  <section class="ability site-section">
+    <section class="site-section-header">
+      <h2 class="site-section-title">What can Mask Network do?</h2>
+    </section>
+    <div class="site-section-body">
+      <div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 425.svg"/>
+            <p>
+              <b>Send encrypted posts</b>
+              to friends
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 458.svg"/>
+            <h3>Demo 1: Send an encrypted message</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 414.svg"/>
+            <p>
+              <b>Send & receive crypto currency</b>
+              on social network
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 458.svg"/>
+            <h3>Demo 2: Send & receive crypto</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 424.svg"/>
+            <p>
+              <b>Support GitCoin funding directly</b>
+              on Twitter
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 458.svg"/>
+            <h3>Demo 3: Support GitCoin grants directly on Twitter</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 426.svg"/>
+            <p>
+              <b>Decentralized file storage</b>
+              and sharing
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="/assets/icons/Group 458.svg"/>
+            <h3>Demo 4: Decentralized file storage and sharing</h3>
+            <p>Cool people sends stuff to cool people living in cool places</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="site-section-footer">
+      <h2 class="site-section-title">Convinced? Curious? Let’s try out!</h2>
+      <section class="open-store">
+        <a class="link-button" href="/install">
+          Get Mask
+        </a>
+        <span class="link-description">
+          For <span title="Google Chrome">Chrome</span>, <span title="Microsoft Edge">Edge</span>, <span
+            title="Mozilla Firefox">Firefox</span>,<br />
+          and Chromium-based browsers.
+        </span>
+      </section>
+    </section>
+  </section>
+
+  <section class="meme-away site-section">
+    <div class="body">
+      <h2>Meme away!</h2>
+      <p>
+        Digital life wouldn’t be completed without memes.<br/>
+        <b>Mask Network</b>‘s meme is a statement. We stand for better privacy and security for all.<br/>
+        <br/>
+        Let’s meme it until we make it.<br/>
+        <b>Mask</b> your idols, <b>Mask</b> your avatar, <b>Mask</b> your president. 
+      </p>
+    </div>
+    <div class="images">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+  </section>
+
+  <section class="faq site-section">
+    <div class="body">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faqs">
+        <div>
+          <div>What is Mask Network?</div>
+          <div>Aren’t social network platforms free to use?</div>
+          <div>Will I get banned when using Mask Network?</div>
+          <div>Can my friends read my encrypted post or red packet without installing Mask Network?</div>
+        </div>
+        <div>
+          <div>Who can see my post?</div>
+          <div>I still don’t get it</div>
+          <div>Is it free?</div>
+          <div>Can I use it on mobile devices?</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news site-section">
+    <div class="body">
+      <h2>News about us</h2>
+      <div class="logos">
+        <a href="https://www.coindesk.com/mask-network-twitter-encrypted-messages-hashkey-funding-round" style="margin-right: 20px;">
+          <img src="img/news/coindesk.png" height="45px"/>
+        </a>
+        <a href="https://decrypt.co/32298/maskbook-a-chinese-dev-builds-a-web3-trojan-horse-on-twitter-and-facebook" style="display: flex; align-items: center; margin-right: 20px;">
+          <img src="img/news/decrypt-mark-100.png" height="50px" />
+          <img src="img/news/decrypt-word-300.png" height="30px" style="margin-left: 15px; transform: translateY(2px);" />
+        </a>      
+        <a href="https://www.theblockcrypto.com/genesis/79395/defi-digest-mask-network-and-marqet">
+          <img src="img/news/block.png" height="50px" />
+        </a>        
+        <a href="https://cointelegraph.com/news/you-can-now-trade-on-uniswap-without-leaving-twitter">
+          <img src="img/news/cointelegraph.png" height="50px" />
+        </a>      
+      </div>
+    </div>
+  </section>  
+
+  <section class="partners site-section">
+    <div class="body">
+      <h2>Partners and supporters</h2>
+      <div class="logos">
+        <a title="arweave" href="https://www.arweave.org/" target="_blank" rel="noopener noreferrer">arweave</a>
+        <a title="ChainIDE" href="https://chainide.com/" target="_blank" rel="noopener noreferrer">ChinaIDE</a>
+        <a title="gun">gun</a>
+        <a title="maker" href="https://makerdao.com/" target="_blank" rel="noopener noreferrer">Maker</a>
+        <a title="web3bootcamp">web3.0 bootcamp</a>
+        <a title="okb">OKB</a>
+        <a title="HashKey" href="https://www.hashkey.com/" target="_blank" rel="noopener noreferrer">HashKey</a>
+        <a title="Gitcoin">Gitcoin</a>
+        <a title="alameda" href="https://www.alameda-research.com/" target="_blank" rel="noopener noreferrer">alameda</a>
+        <a title="platon">platon</a>        
+      </div>
+    </div>
+  </section>
+
+  <section class="alicebob site-section">
+    <div class="body">
+      <div class="top">
+        <div class="line"></div>
+      </div>
+      <i class="text">
+        Alice encrypts cleartext (M) with a random AES key (K) to get ciphertext (CT) and then securely shares K via ECIES over SECP256K1 with Bob using Bob's public key (K.Bob). Alice publishes CT on Facebook and synchronizees K.Bob over GUN. Bob can then retrieve K to decrypt M.
+      </i>
+      <div class="bottom">
+        <div class="line"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer site-section">
+    <div class="body">
+      <div class="main">
+        <p>Mask Network is a Free Software developed and maintained by Dimension.<br/>The source code of Mask Network is available on GitHub. </p>
+        <section>
+          <h3>Get latest news and updates</h3>
+          <form
+            name="subscription" 
+            method="post"
+            target="_blank" 
+            novalidate
+            action="https://dimension.us20.list-manage.com/subscribe/post?u=bd44f8df98ab3d8daf8bbe020&amp;id=d23c8870f6">          
+            <input type="email" name="EMAIL" placeholder="Subscribe" />
+            <button type="submit" style="cursor: pointer;"></button>
+          </form>
+          <nav>
+            <a href="https://www.facebook.com/groups/324857694838456" title="Facebook" target="_blank"></a>
+            <a href="https://twitter.com/realmaskbook" title="Twitter" target="_blank"></a>
+            <a href="https://github.com/DimensionDev" title="GitHub" target="_blank"></a>
+            <a href="https://t.me/maskbook_group#telegram" title="Telegram" target="_blank"></a>
+            <a href="https://discord.gg/4SVXvj7" title="Discord" target="_blank"></a>
+          </nav>
+        </section>
+      </div>
+      <div class="sub">
+        <nav class="about">
+          <h4>About</h4>
+          <a href="/brand-guide" target="_blank">Brand Guide</a>
+          <a href="mailto:info@dimension.im" target="_blank">Contact Us</a>
+          <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+    <div class="body2">
+      <p>I thought what I’d do was, I’d pretend I was one of those deaf-mutes.</p>
+    </div>
+  </section>
+</body>
+
+</html>

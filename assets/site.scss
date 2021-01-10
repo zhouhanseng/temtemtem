@@ -44,6 +44,11 @@ a {
   @media (max-width: $desktop-width) {
     display: none;
   }
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;  
+  background: #fff;  
 
   font-size: 1.25em;
   font-weight: bold;
@@ -256,7 +261,7 @@ a {
     line-height: 37px;
 
     margin: 0;
-    margin-bottom: 54px;
+    margin-bottom: 24px;
 
     letter-spacing: -0.4px;
 
@@ -641,20 +646,24 @@ a {
   > .images {
     margin-top: 76px;
     white-space: nowrap;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     @media (max-width: 600px) {
       margin-top: 48px;
+      justify-content: center;
     }
 
     .card {
       display: inline-block;
-      width: 400px;
-      height: 300px;
+      width: 10.625rem;
+      height: 10.625rem;
+      margin-top: 20px;
+      margin-right: 36px;
 
       @media (max-width: 600px) {
-        width: 160px;
-        height: 120px;
+        margin-right: 0;
       }
 
       background-size: cover;
@@ -667,9 +676,6 @@ a {
         }
       }
 
-      &:not(:last-child) {
-        margin-right: 48px;
-      }
     }
   }
 }
@@ -696,33 +702,63 @@ a {
       }
     }
 
-    > .faqs {
+    article {
       display: flex;
-
-      @media (max-width: 600px) {
-        display: block;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      > section {
+        width: 48%;
       }
-
-      > div {
-        width: 50%;
-
-        @media (max-width: 600px) {
-          width: 100%;
+    }
+  
+    details {
+      font-size: 16px;
+      line-height: 28px;
+  
+      position: relative;
+  
+      margin-bottom: 32px;
+      padding-left: 34px;
+  
+      color: #5d6f88;
+  
+      summary {
+        font-size: 20px;
+        line-height: 30px;
+  
+        position: relative;
+  
+        margin-bottom: 16px;
+  
+        cursor: pointer;
+        user-select: none;
+  
+        color: #3b3b3b;
+        outline: none;
+        &::-webkit-details-marker {
+          display: none;
         }
-
-        > div {
-          font-size: 1.75em;
-          margin: 1em 0;
-          padding: 0 1.5em;
-
-          background-image: url("./icons/Ellipse 15.svg");
-          background-repeat: no-repeat;
-          background-position: 0 0.4em;
-
-          @media (max-width: 600px) {
-            font-size: 1.25em;
-          }
-        }
+      }
+  
+      & > summary::before {
+        position: absolute;
+        left: -34px;
+  
+        display: inline-block;
+  
+        width: 18px;
+        height: 30px;
+  
+        content: "";
+        vertical-align: baseline;
+  
+        background: url(./icons/details-closed.svg) no-repeat center;
+        background-size: 100% 100%;
+      }
+  
+      &[open] > summary::before {
+        background-image: url(./icons/details-open.svg);
       }
     }
   }
@@ -751,15 +787,16 @@ a {
 
     .logos {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: center;
       align-items: center;
       margin: 0;
+      width: 100%;
 
       a {
         font-size: 36px;
         line-height: 40px;
-
+        font-size: 12px;
         display: inline-block;
 
         height: 40px;
@@ -827,7 +864,7 @@ a {
       @media (max-width: 600px) {
         a {
           margin-top: 16px;
-          font-size: 18px;
+          font-size: 12px;
           &:not(:first-child) {
             margin-left: 16px;
           }

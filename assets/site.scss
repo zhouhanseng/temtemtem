@@ -650,7 +650,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
 
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       margin-top: 48px;
       justify-content: center;
     }
@@ -662,9 +662,31 @@ a {
       margin-top: 20px;
       margin-right: 36px;
 
-      @media (max-width: 600px) {
+      @media (max-width: 700px) {
         margin-right: 0;
+        margin-top: 10px;        
+        width: 8.5rem;
+        height: 8.5rem;        
       }
+
+      @media (max-width: 500px) {
+        margin-right: 0;
+        margin-top: 0;
+        width: 8rem;
+        height: 8rem;        
+      }  
+
+      @media (max-width: 400px) {
+        margin-right: 0;
+        width: 7.5rem;
+        height: 7.5rem;        
+      }   
+      
+      @media (max-width: 350px) {
+        margin-right: 0;
+        width: 7rem;
+        height: 7rem;        
+      }        
 
       background-size: cover;
       background-repeat: no-repeat;
@@ -699,6 +721,7 @@ a {
 
       @media (max-width: 600px) {
         font-size: 2em;
+        margin-bottom: 24px;
       }
     }
 
@@ -709,6 +732,9 @@ a {
   
       > section {
         width: 48%;
+        @media (max-width: 800px) {
+          width: 96%;
+        }              
       }
     }
   
@@ -792,13 +818,17 @@ a {
       align-items: center;
       margin: 0;
       width: 100%;
-
+      @media (max-width: 600px) {
+        flex-wrap: wrap;
+        align-items: baseline;
+      }
       a {
         font-size: 36px;
         line-height: 40px;
         font-size: 12px;
         display: inline-block;
-
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
         height: 40px;
 
         user-select: none;
@@ -807,19 +837,26 @@ a {
         background: no-repeat center;
         background-size: 100%;
         margin-top: 64px;
+        @media (max-width: 600px) {
+          margin-top: 24px;
+        }        
         &:not(:first-child) {
           margin-left: 32px;
         }
       }
 
       a[title="arweave"] {
-        width: 180px;
-        background-image: url(./icons/arweave.svg);
+        width: 160px;
+        opacity: 0.6;
+        background-image: url(./icons/arweave.png);
       }
       a[title="ChainIDE"] {
+        width: 100px;
         background-image: url(./icons/chain-ide.png) !important;
       }
       a[title="gun"] {
+        width: 80px;
+        height: 50px;
         background-image: url(./icons/gun.svg);
       }
       a[title="maker"] {
@@ -843,8 +880,8 @@ a {
         background-image: url(./icons/hash-key.jpg);
       }
       a[title="Gitcoin"] {
-        opacity: 0.4;
-        width: 40px;
+        opacity: 0.6;
+        width: 100px;
         background-image: url(./icons/gitcoin.png);
       }
 
@@ -860,49 +897,6 @@ a {
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);      
       }         
-
-      @media (max-width: 600px) {
-        a {
-          margin-top: 16px;
-          font-size: 12px;
-          &:not(:first-child) {
-            margin-left: 16px;
-          }
-        }
-
-        a[title="arweave"] {
-          width: 90px;
-        }
-        a[title="ChainIDE"] {
-          width: 90px;
-        }
-        a[title="gun"] {
-          width: 40px;
-        }
-        a[title="maker"] {
-          width: 80px;
-        }
-        a[title="web3bootcamp"] {
-          width: 50px;
-          height: 20px;
-        }
-        a[title="okb"] {
-          width: 23px;
-          height: 23px;
-        }
-        a[title="HashKey"] {
-          width: 55px;
-        }
-        a[title="Gitcoin"] {
-          width: 20px;
-        }    
-        a[title="alameda"] {
-          width: 120px;
-        }
-        a[title="platon"] {
-          width: 100px; 
-        }               
-      }
     }
   }
 }
@@ -921,10 +915,23 @@ a {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;      
+      align-items: center;     
+
+      @media (max-width: 1050px) {
+        justify-content: space-around;
+      }    
 
       > a {
+        -webkit-filter: none;
+        filter: none;      
         margin-top: 20px;
+        @media (max-width: 1050px) {
+          margin-left: 0;
+          margin-right: 0;
+        }    
+        @media (max-width: 550px) {
+          width: 100%;
+        }           
       }
     }
   }
